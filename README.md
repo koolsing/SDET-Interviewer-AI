@@ -65,12 +65,30 @@ ollama pull qwen3:30b
 ### Step 1: Index your study docs (Optional)
 Place your `.pdf`, `.md`, or `.txt` files into `resources/<topic_name>/` and run:
 ```bash
+
 python main.py --index
 ```
 
 ### Step 2: Start an Interview
 ```bash
 python main.py
+=======
+./run.sh --index
+```
+
+### Step 2: Start an Interview
+The easiest way to start the app is to use the provided runner script which handles the virtual environment for you:
+
+```bash
+./run.sh
+```
+
+#### Manual Alternative (Using venv directly)
+If you prefer to run it manually:
+```bash
+source venv/bin/activate
+python3 main.py
+
 ```
 Follow the interactive wizard to select your **Model**, **Round**, **Topic**, and **Duration**.
 
@@ -105,6 +123,7 @@ Llama 3 models are strict and require a user kickoff. We have optimized the `Int
 This project is open-source. Build, modify, and ace your interviews! 🚀
 
 
+
 🎙️ SDET Interview Coach Walkthrough
 This document provides a comprehensive overview of the SDET Interview Coach, a private, local AI application for practicing interviews.
 
@@ -136,4 +155,6 @@ Chat Template Fix: Uses a hidden "kickoff" message to ensure Llama 3 models alwa
 Context Reordering: Keeps system messages behind the user turn to prevent "silent generation" bugs in strict models.
 Good luck with your interview practice!
 
+
+=======
 
