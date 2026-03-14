@@ -1,0 +1,35 @@
+# --- The '10k Change' Killers ---
+node_modules/
+bower_components/
+dist/
+build/
+.next/
+out/
+.docusaurus/
+
+# --- Python / Logic ---
+venv/
+env/
+ENV/
+.env
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- IDE / Tooling Bloat ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.cursor/
+.antigravity/
+
+# --- OS Junk ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
